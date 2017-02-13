@@ -1,4 +1,4 @@
 # iamas_workshop
 examples for workshop at iamas
 
-some samples are depends on https://github.com/kezzardrix/ofxBlur
+some projects are depends on https://github.com/kezzardrix/ofxBlur

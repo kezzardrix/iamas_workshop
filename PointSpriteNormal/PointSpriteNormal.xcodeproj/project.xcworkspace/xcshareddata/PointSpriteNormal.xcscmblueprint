@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : 0,
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "94A5F635-AAB9-4098-A5CC-D4362DF17446",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : "iamasWorkshop\/",
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : "iamasWorkshop\/PointSpriteNormal\/addons\/ofxBlur\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PointSpriteNormal",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PointSpriteNormal\/PointSpriteNormal.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/ofxBlur",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/iamas_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E"
+    }
+  ]
+}

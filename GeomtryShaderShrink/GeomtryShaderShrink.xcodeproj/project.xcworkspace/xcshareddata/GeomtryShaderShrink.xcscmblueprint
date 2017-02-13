@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : 0,
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "33B73DD3-4036-4F66-B2E6-8EE024205FB0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : "iamasWorkshop\/",
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : "iamasWorkshop\/GeomtryShaderShrink\/addons\/ofxBlur\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GeomtryShaderShrink",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GeomtryShaderShrink\/GeomtryShaderShrink.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/ofxBlur",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/iamas_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E"
+    }
+  ]
+}

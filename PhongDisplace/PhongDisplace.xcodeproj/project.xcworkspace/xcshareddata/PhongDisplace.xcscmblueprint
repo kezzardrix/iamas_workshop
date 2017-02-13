@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : 0,
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "79312AC4-8DE4-488E-A3D7-10440C10964D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E" : "iamasWorkshop\/",
+    "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB" : "iamasWorkshop\/PhongDisplace\/addons\/ofxBlur\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PhongDisplace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PhongDisplace\/PhongDisplace.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/ofxBlur",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B7D3B297962C41A4A67EFE4DB1DBDE53440A0BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kezzardrix\/iamas_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2CBD8F1A95AEBE7A629578EC268DE3E82FCD61E"
+    }
+  ]
+}

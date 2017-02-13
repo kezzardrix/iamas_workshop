@@ -5,12 +5,12 @@
 
 uniform float time;
 
-in varying float vNoise[3];
-in varying vec3 vNormal[3];
+varying in float vNoise[3];
+varying in vec3 vNormal[3];
 
-out varying vec3 normal;
-out varying vec4 world;
-out varying float vNoiseIntensity;
+varying out vec3 normal;
+varying out vec4 world;
+varying out float vNoiseIntensity;
 
 void makeVertex(vec3 pos){
 

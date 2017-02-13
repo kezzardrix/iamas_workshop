@@ -5,17 +5,17 @@
 
 uniform float time;
 
-in varying float vNoise[3];
-in varying vec3 vNormal[3];
-in varying vec2 vTexCoord[3];
+varying in float vNoise[3];
+varying in vec3 vNormal[3];
+varying in vec2 vTexCoord[3];
 
-out varying vec3 normal;
-out varying vec4 world;
-out varying float vNoiseIntensity;
+varying out vec3 normal;
+varying out vec4 world;
+varying out float vNoiseIntensity;
 
-out varying vec2 texCoord;
+varying out vec2 texCoord;
 
-in varying float id[3];
+varying in float id[3];
 
 void main(){
     

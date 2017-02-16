@@ -12,9 +12,13 @@ void ShadingParticle::setup(){
     
     for(int i = 0; i < NUM; i++){
         mVerts.push_back(ofPoint(0));
+        mNormals.push_back(ofPoint(ofRandom(1.0),
+                                   ofRandom(1.0),
+                                   ofRandom(1.0)));
     }
     
     mVbo.setVertexData(&mVerts[0],NUM,GL_DYNAMIC_DRAW);
+    mVbo.setNormalData(&mNormals[0],NUM,GL_DYNAMIC_DRAW);
 
     ofFbo::Settings s;
     s.width = ofGetWidth();
@@ -25,14 +29,13 @@ void ShadingParticle::setup(){
     mPre.allocate(s);
     
     mPointSprite.load("shaders/ShadingParticle/pointSprite");
-    mShading.load("","shaders/ShadingParticle/shading.frag");
-    
+
     mCam.setupPerspective();
     
 };
 void ShadingParticle::update(){
     mVbo.updateVertexData(&mVerts[0],NUM);
-   // mShading.load("","shaders/ShadingParticle/shading.frag");
+    mVbo.updateNormalData(&mNormals[0], NUM);
 };
 void ShadingParticle::draw(){
     
@@ -43,7 +46,6 @@ void ShadingParticle::draw(){
     mPre.begin();
     mPre.activateAllDrawBuffers();
     ofClear(0,0);
-    
     mCam.begin();
     mPointSprite.begin();
     mVbo.draw(GL_POINTS,0,NUM);
@@ -53,9 +55,8 @@ void ShadingParticle::draw(){
     mPre.end();
     
     ofSetColor(255);
-    mShading.begin();
-    mShading.setUniform3f("lightPos",ofPoint(1,1,0) * mCam.getModelViewMatrix());
-    mShading.setUniformTexture("colorTex", mPre.getTexture(1), 1);
-    mPre.draw(0,0);
-    mShading.end();
+    mPre.getTexture(0).draw(0, 0, ofGetWidth() * 0.5, ofGetHeight() * 0.5);
+    
+    ofSetColor(255);
+    mPre.getTexture(1).draw(ofGetWidth() * 0.5, 0, ofGetWidth() * 0.5, ofGetHeight() * 0.5);
 };

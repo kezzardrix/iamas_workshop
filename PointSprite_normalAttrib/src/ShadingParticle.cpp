@@ -12,50 +12,40 @@ void ShadingParticle::setup(){
     
     for(int i = 0; i < NUM; i++){
         mVerts.push_back(ofPoint(0));
+        mNormals.push_back(ofPoint(ofRandom(1.0),
+                                   ofRandom(1.0),
+                                   ofRandom(1.0)));
     }
     
     mVbo.setVertexData(&mVerts[0],NUM,GL_DYNAMIC_DRAW);
+    
+    //ポイント表現はメッシュと違って法線が必要ない。なので、法線にランダムな値を入れておいて、glslの中で利用すると設定が楽。
+    //真っ当なやり方をしたい場合はattributeを自分で設定する
+    
+    mVbo.setNormalData(&mNormals[0],NUM,GL_DYNAMIC_DRAW);
 
-    ofFbo::Settings s;
-    s.width = ofGetWidth();
-    s.height = ofGetHeight();
-    s.internalformat = GL_RGBA32F;
-    s.numColorbuffers = 2;
-    
-    mPre.allocate(s);
-    
     mPointSprite.load("shaders/ShadingParticle/pointSprite");
-    mShading.load("","shaders/ShadingParticle/shading.frag");
-    
+
     mCam.setupPerspective();
     
 };
 void ShadingParticle::update(){
     mVbo.updateVertexData(&mVerts[0],NUM);
-   // mShading.load("","shaders/ShadingParticle/shading.frag");
+    mVbo.updateNormalData(&mNormals[0], NUM);
+  //  mPointSprite.load("shaders/ShadingParticle/pointSprite");
 };
 void ShadingParticle::draw(){
     
     enablePointSprite();
     ofDisableDepthTest();
     ofEnableBlendMode(OF_BLENDMODE_ALPHA);
-    
-    mPre.begin();
-    mPre.activateAllDrawBuffers();
+
     ofClear(0,0);
-    
     mCam.begin();
     mPointSprite.begin();
     mVbo.draw(GL_POINTS,0,NUM);
     mPointSprite.end();
+    
     mCam.end();
-    
-    mPre.end();
-    
-    ofSetColor(255);
-    mShading.begin();
-    mShading.setUniform3f("lightPos",ofPoint(1,1,0) * mCam.getModelViewMatrix());
-    mShading.setUniformTexture("colorTex", mPre.getTexture(1), 1);
-    mPre.draw(0,0);
-    mShading.end();
+ 
 };

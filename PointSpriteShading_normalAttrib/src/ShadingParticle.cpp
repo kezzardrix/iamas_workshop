@@ -12,9 +12,13 @@ void ShadingParticle::setup(){
     
     for(int i = 0; i < NUM; i++){
         mVerts.push_back(ofPoint(0));
+        mNormals.push_back(ofPoint(ofRandom(1.0),
+                                   ofRandom(1.0),
+                                   ofRandom(1.0)));
     }
     
     mVbo.setVertexData(&mVerts[0],NUM,GL_DYNAMIC_DRAW);
+    mVbo.setNormalData(&mNormals[0],NUM,GL_DYNAMIC_DRAW);
 
     ofFbo::Settings s;
     s.width = ofGetWidth();
@@ -32,7 +36,8 @@ void ShadingParticle::setup(){
 };
 void ShadingParticle::update(){
     mVbo.updateVertexData(&mVerts[0],NUM);
-   // mShading.load("","shaders/ShadingParticle/shading.frag");
+    mVbo.updateNormalData(&mNormals[0], NUM);
+  //  mShading.load("","shaders/ShadingParticle/shading.frag");
 };
 void ShadingParticle::draw(){
     
